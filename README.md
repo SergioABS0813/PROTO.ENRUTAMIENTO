@@ -72,6 +72,10 @@ Luego le indicamos al router que el gateway predeterminado para los clientes DHC
 
     (dhcp-config)# default router 192.168.1.1
 
+## MOSTRAR TABLA DE ENRUTAMIENTO DE UN ROUTER
+
+    #show ip route
+
 
 
 
