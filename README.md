@@ -57,6 +57,21 @@ Primero creamos una regla para excluir las IPs, mediante un rango, que no querem
 Por ejemplo (excluimos del 1 al 10 para que no asigne a nadie):
 
     (config)# ip dhcp excluded-address 192.168.1.1 192.168.1.10
+
+Luego creamos el pool de direcciones disponibles a ser asignadas
+
+    (config)# ip dhcp pool RED_LAN (cualquier nombre en vez de RED_LAN)
+
+Posteriormente, le indicamos el network o red en la que el dhcp asignará IPs
+
+    (dhcp-config)# network (DIRECCION-DE-RED) (MASCARA-DE-RED)
+
+Luego le indicamos al router que el gateway predeterminado para los clientes DHCP en el pool RED_LAN
+
+    (dhcp-config)# default router (IP DE LA INTERFAZ DE ROUTER DONDE SE ENCUENTRAN LOS CLIENTES DHCP)
+
+    (dhcp-config)# default router 192.168.1.1
+    
      
 
 
