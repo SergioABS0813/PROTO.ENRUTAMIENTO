@@ -66,7 +66,7 @@ Posteriormente, le indicamos el network o red en la que el dhcp asignará IPs
 
     (dhcp-config)# network (DIRECCION-DE-RED) (MASCARA-DE-RED)
 
-Luego le indicamos al router que el gateway predeterminado para los clientes DHCP en el pool RED_LAN
+Luego le indicamos al router que el gateway predeterminado para los clientes DHCP en el pool RED_LAN, si no el router no sabría a que interfaz (gateway) realizaría DHCP
 
     (dhcp-config)# default router (IP DE LA INTERFAZ DE ROUTER DONDE SE ENCUENTRAN LOS CLIENTES DHCP)
 
