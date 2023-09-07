@@ -48,6 +48,10 @@ Por ejemplo:
 
     (config)# ip route 192.168.1.0 255.255.255.0 10.10.1.1
 
+Sin embargo, si queremos borrar la ruta estática que habíamos puesto en el router, colocamos (no ip route):
+
+        (config)# no ip route 192.168.1.0 255.255.255.0 10.10.1.1
+
 ## DHCP
 
 Primero creamos una regla para excluir las IPs, mediante un rango, que no queremos que el DHCP asigne a los dispositivos: 
