@@ -54,7 +54,7 @@ Primero creamos una regla para excluir las IPs, mediante un rango, que no querem
 
     (config)# ip dhcp excluded-address (IP INICIAL DE LA RED QUE QUIERES EXCLUIR) (IP FINAL HASTA DONDE QUIERAS EXCLUIR)
 
-Por ejemplo:
+Por ejemplo (excluimos del 1 al 10 para que no asigne a nadie):
 
     (config)# ip dhcp excluded-address 192.168.1.1 192.168.1.10
      
