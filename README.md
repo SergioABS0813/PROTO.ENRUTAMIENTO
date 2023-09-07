@@ -48,6 +48,18 @@ Por ejemplo:
 
     (config)# ip route 192.168.1.0 255.255.255.0 10.10.1.1
 
+## DHCP
+
+Primero creamos una regla para excluir las IPs, mediante un rango, que no queremos que el DHCP asigne a los dispositivos: 
+
+    (config)# ip dhcp excluded-address (IP INICIAL DE LA RED QUE QUIERES EXCLUIR) (IP FINAL HASTA DONDE QUIERAS EXCLUIR)
+
+Por ejemplo:
+
+    (config)# ip dhcp excluded-address 192.168.1.1 192.168.1.10
+     
+
+
 
         
 
