@@ -73,6 +73,7 @@ Luego le indicamos al router que el gateway predeterminado para los clientes DHC
     (dhcp-config)# default router 192.168.1.1
 
 ## MOSTRAR TABLA DE ENRUTAMIENTO DE UN ROUTER
+La tabla de enrutamiento contiene información sobre las redes a las que el router puede llegar, así como la ruta que debe seguir para llegar a esas redes.
 
     #show ip route
 
