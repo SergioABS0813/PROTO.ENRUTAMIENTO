@@ -16,25 +16,38 @@ Para ingresar al modo de configuración:
 
 Para ingresar a una interfaz (FastEthernet):
 
-    #(config-if)interface FastEthernet 0/0
+    (config-if)#interface FastEthernet 0/0
     
 Para ingresar a una interfaz (GigabitEthernet):
 
-    #(config-if)ip add IPv4 Mascara-Red
+    (config-if)#ip add IPv4 Mascara-Red
 
 Para añadir una ip a esa interfaz:
 
-    #(config-if)ip add IPv4 Mascara-Red
+    (config-if)#ip add IPv4 Mascara-Red
 
 Siempre guardamos la configuración de un terminal
 
-    #(config-if)no shutdown
+    (config-if)#no shutdown
 
 Para salir de la interfaz:
 
-    #(config-if)exit
+    (config-if)#exit
 
 Para ver las IPs de las interfaces:
 
     #show ip interface brief
+
+## Enrutamiento estático (IP Route)
+
+Es un tipo de enrutamiento que tiene una sola dirección en la que se envían los paquetes (no cambia). Lo malo de este tipo de enrutamiento es que si una red cae, entonces las demás redes que solían pasar por esa red para llegar a esa red ya no podrían pasar por ahí, por lo tanto no habría conexión entre esas redes.
+
+        (config)# ip route (DIRECCION-DE-RED-POR-CONOCER) (MASCARA-DE-RED-POR-CONOCER) (IP-POR-DONDE-PASARA)
+
+Por ejemplo:
+
+        (config)# ip route 192.168.1.0 255.255.255.0 10.10.1.1
+
+
+        
 
