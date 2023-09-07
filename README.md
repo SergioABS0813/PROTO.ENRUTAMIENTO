@@ -77,6 +77,15 @@ La tabla de enrutamiento contiene información sobre las redes a las que el rout
 
     #show ip route
 
+## Mostrar Direcciones IP DHCP asigandos
+
+se utiliza para mostrar las direcciones IP DHCP asignadas a los clientes DHCP en un router.
+
+    #show ip dhcp binding
+
+## Mostrar estado del pool de IPs del router
+
+    #show ip dhcp pool
 
 
 
