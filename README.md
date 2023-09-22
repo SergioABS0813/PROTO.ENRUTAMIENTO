@@ -91,6 +91,14 @@ se utiliza para mostrar las direcciones IP DHCP asignadas a los clientes DHCP en
 
     #show ip dhcp pool
 
+## OSPFV2
+Configuración para que cada interface en el router hable OSPFV2:
+
+    router ospf 1
+    router-id 10.1.1.1
+    interface FastEthernet0/0
+    ip ospf 1 area 0
+
 
 
 
