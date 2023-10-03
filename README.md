@@ -99,7 +99,67 @@ Configuración para que cada interface en el router hable OSPFV2:
     interface FastEthernet0/0
     ip ospf 1 area 0
 
+## CLASE 8 ---------------------------------------------------------------------------------
 
+## IPV6
+
+Antes de toda configuración, colocamos el comando:
+
+    ipv6 unicast-routing
+
+Para que pueda hablar en IPV6 el router
+
+## PING IPV6
+
+    ping <IPV6 Dispositivo>
+
+## RIP
+Para ingresar al enrutamiento RIP IPV6
+
+    ipv6 router rip <TELECOM>
+    
+Para las Loopbacks:
+
+    int lo0
+    ipv6 rip TELECOM enable
+
+Para las Interfaces:
+
+    int f0/1
+    ipv6 rip TELECOM enable
+
+    
+## OSPF
+
+Para ingresar a OSPF
+
+    ipv6 router ospf <Process ID>
+    
+Para configurar OSPF en las interfaces:
+
+    int f0/0
+    ipv6 router ospf <Process ID> area <x>
+
+## EIGRP
+
+Para ingresar  EIGRP:
+
+    ipv6 router eigrp <Sistema Autónomo>
+
+Para colocarles a las interfaces:
+
+    int f0/1
+    ipv6 eigrp <Sistema Autónomo>
+
+     int lo0
+    ipv6 eigrp <Sistema Autónomo>
+    
+
+
+    
+    
+
+    
 
 
     
