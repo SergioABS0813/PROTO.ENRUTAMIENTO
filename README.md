@@ -133,7 +133,7 @@ Para las Interfaces:
 
 Para ingresar a OSPF
 
-    ipv6 router ospf <Process ID>
+    router ospfv3 <Process ID>
 
 Asignar un router-id a cada router:
 
@@ -142,7 +142,7 @@ Asignar un router-id a cada router:
 Para configurar OSPF en las interfaces:
 
     int f0/0
-    ipv6 router ospf <Process ID> area <x>
+    ipv6 router ospfv3 <Process ID> area <x>
 
 ## EIGRP
 
