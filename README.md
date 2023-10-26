@@ -175,7 +175,9 @@ Para colocarles a las interfaces EIGRP:
 
     ctrl + shift + 6
     
-    
+## Ver Interface (DCE o DTE)
+
+    sh interfaces serial x/y/z
 
     
 
