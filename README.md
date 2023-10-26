@@ -150,7 +150,14 @@ Para ingresar  EIGRP:
 
     ipv6 router eigrp <Sistema Autónomo>
 
-Para colocarles a las interfaces:
+Asignamos router-id a los routers:
+
+    eigrp router-id A.B.C.D
+
+Activar EIGRP:
+    no shut
+
+Para colocarles a las interfaces EIGRP:
 
     int f0/1
     ipv6 eigrp <Sistema Autónomo>
