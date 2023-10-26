@@ -171,7 +171,9 @@ Para colocarles a las interfaces EIGRP:
     ipv6 eigrp <Sistema Autónomo>
     
 
+## Stoppear ejecución router
 
+    ctrl + shift + 6
     
     
 
