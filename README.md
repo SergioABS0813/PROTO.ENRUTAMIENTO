@@ -177,7 +177,7 @@ Para colocarles a las interfaces EIGRP:
     
 ## Ver Interface (DCE o DTE)
 
-    sh interfaces serial x/y/z
+    sh controllers serial x/y/z
 
     
 
