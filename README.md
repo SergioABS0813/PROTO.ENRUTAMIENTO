@@ -142,7 +142,7 @@ Asignar un router-id a cada router:
 Para configurar OSPF en las interfaces:
 
     int f0/0
-    ipv6 router ospfv3 <Process ID> area <x>
+    ospfv3 <Process ID> ipv6 area <x>
 
 ## EIGRP
 
