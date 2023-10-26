@@ -109,6 +109,11 @@ Antes de toda configuración, colocamos el comando:
 
 Para que pueda hablar en IPV6 el router
 
+## Enrutamiento Estático (Default Gateway)
+Asignamos la loopback pedida si es con loopback:
+
+    ipv6 route ::/0 lo1
+
 ## PING IPV6
 
     ping <IPV6 Dispositivo>
