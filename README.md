@@ -129,11 +129,15 @@ Para las Interfaces:
     ipv6 rip TELECOM enable
 
     
-## OSPF
+## OSPFv3
 
 Para ingresar a OSPF
 
     ipv6 router ospf <Process ID>
+
+Asignar un router-id a cada router:
+
+    router-id x.y.z.w
     
 Para configurar OSPF en las interfaces:
 
