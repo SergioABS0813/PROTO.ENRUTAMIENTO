@@ -180,6 +180,9 @@ Para colocarles a las interfaces EIGRP:
     sh controllers serial x/y/z
 
     
+## EVALUACIÓN CONTINUA 11
+
+![image](https://github.com/SergioABS0813/PROTO.ENRUTAMIENTO/assets/134556600/4f872b2c-df72-4249-8f22-6f7e75366600)
 
 
     
