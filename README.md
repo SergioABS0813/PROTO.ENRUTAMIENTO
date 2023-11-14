@@ -182,6 +182,12 @@ Para colocarles a las interfaces EIGRP:
     
 ## EVALUACIÓN CONTINUA 11
 
+En EIGRP solo anunciamos las redes dentro del círculo
+
+La red que se conecta vía static entre R2 y R4 no se anuncia en EIGRP
+
+La ruta static fue directamente con la red de la loopback (tal cual se pone la direccion de lo0 de R4)
+
 ![image](https://github.com/SergioABS0813/PROTO.ENRUTAMIENTO/assets/134556600/4f872b2c-df72-4249-8f22-6f7e75366600)
 
 
